@@ -21,10 +21,10 @@
 
 def square_sum(numbers):
     #your code here
-    sum = 0
-    for i in numbers:
-        sum += i * i
-    return sum
+    sum = 0 # Set numbers sum
+    for i in numbers: # iterate numbers list
+        sum += i * i # Square num and plus res to sum
+    return sum # return sum of n numbers
 
 
 
