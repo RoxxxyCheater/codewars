@@ -20,16 +20,15 @@
 # Fundamentals
 
 def square_sum(numbers):
-    print('numbers: ', numbers)
+    #your code here
+    sum = 0
+    for i in numbers:
+        sum += i * i
     return sum
 
 
 
 def basic_test_cases():
-    return True if square_sum([1,2]) == 5
-    return True if square_sum([0, 3, 4, 5]) == 50)
-    return True if square_sum([]) == 0)
-    return True if square_sum([-1,-2]) == 5)
-    return True if square_sum([-1,0,1]) == 2)
-
+    return all(square_sum([1,2]) == 5, square_sum([0, 3, 4, 5]) == 50, square_sum([]) == 0, square_sum([-1,-2]) == 5, square_sum([-1,0,1]) == 2)
+    
 basic_test_cases()
