@@ -19,7 +19,15 @@
 
 
 def array_diff(a, b):
-  return res
+    for bn in b:
+        if not bn or len(b) < 1:
+            return a
+        for an in a:
+            if a.count(bn) > 1:
+                return [x for x in a if x != bn]
+            if bn == an:
+                a.remove(an)
+    return a
 
 
 def basic_test_cases():
