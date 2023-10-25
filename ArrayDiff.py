@@ -18,19 +18,10 @@
 # ARRAYSFUNDAMENTALSALGORITHMS
 
 
+
 def array_diff(a, b):
-    for bn in b:  # Проходим по списку b
-        if not bn or len(b) < 1:  # Если итерируемый bn пуст или только один элемент
-            return a  # возвращаем список a
-
-        for an in a:  # Если элементов больше одного, проходим по списку a, сравнивая с bn
-            if a.count(bn) > 1:  # Если bn встречается в списке a более одного раза
-                return [x for x in a if x != bn]  # Создаем новый список, исключая все вхождения bn
-
-            if bn == an:  # Если bn равен an
-                a.remove(an)  # Удаляем его вхождение bn из списка a
-
-    return a  # Возвращаем список a
+    result = [x for x in a if x not in b]
+    return result
 
 
 def basic_test_cases():
