@@ -20,8 +20,8 @@
 
 
 def array_diff(a, b):
-    result = [x for x in a if x not in b]
-    return result
+    result = [x for x in a if x not in b]# Используем list comprehension для создания нового списка, включая только элементы из a, которые отсутствуют в b
+    return result #возвращаем список а без вхождений
 
 
 def basic_test_cases():
