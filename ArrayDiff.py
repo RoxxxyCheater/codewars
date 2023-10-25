@@ -16,3 +16,13 @@
 
 # array_diff([1,2,2,2,3],[2]) == [1,3]
 # ARRAYSFUNDAMENTALSALGORITHMS
+
+
+def array_diff(a, b):
+  return res
+
+
+def basic_test_cases():
+    return all(array_diff([1,2], [1]), array_diff([1,2,2], [1]), array_diff([1,2,2], [2]), array_diff([1,2,2], []), array_diff([], [1,2]), array_diff([1,2,3], [1, 2]))
+
+basic_test_cases()
