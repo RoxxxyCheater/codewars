@@ -17,11 +17,16 @@
 
 
 def divisors(n):
-    divs = [i for i in range(2, integer) if integer % i == 0]
-    if not divs:
-        return f"{integer} is prime"
-    return divs
+    # Создаем пустой список divs для хранения делителей числа n (кроме 1 и самого числа).
+    divs = [i for i in range(2, n) if n % i == 0]
 
+    # Проверяем, есть ли делители в списке divs.
+    if not divs:
+        # Если нет делителей, возвращаем сообщение о том, что число n является простым.
+        return f"{n} is prime"
+    
+    # Если есть делители, возвращаем список делителей.
+    return divs
 
     def basic_test_cases():
         return True if divisors(15) == [3,5])      
