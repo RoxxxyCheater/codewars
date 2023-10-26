@@ -17,7 +17,10 @@
 
 
 def divisors(n):
-  return res
+    divs = [i for i in range(2, integer) if integer % i == 0]
+    if not divs:
+        return f"{integer} is prime"
+    return divs
 
 
     def basic_test_cases():
